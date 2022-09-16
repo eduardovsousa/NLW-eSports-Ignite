@@ -14,6 +14,7 @@ import { GameParams } from "../../@types/navigation";
 import { Heading } from "../../components/Heading";
 import { Background } from "../../components/Background";
 import { DuoCard, DuoCardProps } from "../../components/DuoCard";
+import { DuoMatch } from "../../components/DuoMatch"; 
 
 export function Game() {
   const [duos, setDuos] = useState<DuoCardProps[]>([]);
@@ -83,6 +84,11 @@ export function Game() {
           )}
         />
 
+
+        <DuoMatch
+          visible={false}
+          discord="teste#0132"
+        />
       </SafeAreaView>
     </Background>
   );
