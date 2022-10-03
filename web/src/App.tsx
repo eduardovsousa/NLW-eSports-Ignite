@@ -8,7 +8,9 @@ import logoImg from "./assets/logo-nlw-esports.svg";
 import { CreateAdModal } from "./components/CreateAdModal";
 import { GameBanner } from "./components/GameBanner";
 import { CreateAdBanner } from "./components/CreateAdBanner";
-import LoginModal from "./components/LoginModal";
+import { LoginModal } from "./components/LoginModal";
+import { CreateAccount } from "./components/CreateAccount";
+
 
 interface Game {
   id: string;
@@ -32,9 +34,14 @@ function App() {
 
   return (
     <div>
-      <Dialog.Root>
-        <LoginModal />
-      </Dialog.Root>
+      <div className="flex flex-row mt-5 ml-[80%]">
+        <Dialog.Root>
+          <LoginModal />
+        </Dialog.Root>
+        <Dialog.Root>
+          <CreateAccount />
+        </Dialog.Root>
+      </div>
 
       <div className="max-w-[1344px] mx-auto my-20 flex flex-col items-center ">
         <img src={logoImg} alt="logo da nlw esports" />

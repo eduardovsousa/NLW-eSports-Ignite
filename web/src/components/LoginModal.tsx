@@ -6,8 +6,8 @@ import { At, Check, Key, SignIn, X } from "phosphor-react";
 
 export function LoginModal() {
   return (
-    <div>
-      <Dialog.Trigger className="bg-[#661e6552] flex items-center justify-center py-2 px-12 text-white font-bold rounded-lg ml-auto mr-20 mt-4 hover:bg-[#3e3357]">
+    <div className="mr-1">
+      <Dialog.Trigger className="bg-[#661e6552] flex items-center justify-center py-2 px-8 text-white font-bold rounded-lg hover:bg-[#3e3357]">
         Login
       </Dialog.Trigger>
 
@@ -70,15 +70,6 @@ export function LoginModal() {
                   </button>
                 </label>
               </div>
-              <footer>
-                <hr className="mt-10 self-stretch rounded-lg overflow-hidden h-1 bg-nlw-gradient" />
-                <Dialog.Title className="mt-3">
-                  Ainda não é registrado?
-                </Dialog.Title>
-                <Dialog.Trigger className="bg-emerald-600 px-36 mt-4 h-8 rounded-md font-semibold flex items-center hover:bg-emerald-700">
-                  Crie sua conta
-                </Dialog.Trigger>
-              </footer>
             </form>
           </Dialog.Content>
         </Dialog.Overlay>
@@ -86,5 +77,3 @@ export function LoginModal() {
     </div>
   );
 }
-
-export default LoginModal;
